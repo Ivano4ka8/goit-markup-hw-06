@@ -404,6 +404,9 @@ img {
   color: var(--accent-color);
   margin-top: 16px;
 }
+.footer-soc{
+  margin-right: 80px;
+}
 
 .footer-soc-title {
   font-weight: 500;
@@ -572,6 +575,11 @@ img {
   margin-right: 24px;
 
   cursor: pointer;
+  transition: background-color var(--main-transition), fill var(--main-transition);
+}
+.modal-close:is(:hover,:focus){
+  background: #404BBF;
+fill: var(--white-color);
 }
 .modal-icon {
   position: absolute;
@@ -672,6 +680,8 @@ border: 1.25px solid #2E2F42;
 border-radius: 2px;
 cursor: pointer;
 margin-right: 8px;
+
+transition: background-color var(--main-transition),border var(--main-transition);
 }
 
 .form-modal-check:checked +.form-modal-check-descr::before{
@@ -681,7 +691,7 @@ background-image: url(../images/Vector.svg);
 background-repeat: no-repeat;
 background-position: center;
 background-size: contain;
-background-origin:border-box
+background-origin:content-box;
 }
 
 .form-modal-comment {
@@ -734,5 +744,5 @@ color: var(--primary-brand-color);
 
 }
 
-
 /* -------Footer form-------- */
+
